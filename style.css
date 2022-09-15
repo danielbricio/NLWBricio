@@ -26,10 +26,26 @@ body *{
     border: 1px solid red;
 }*/
 
+header{
+    margin-top: 32px;
+    text-align: center;
+}
+
+header div{
+    width: 120px;
+    margin:auto;
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
 main    {
     max-width: 580px;
     width: 90%;
-    margin: auto;
+    margin: 32px auto;
 
     display: grid;
     gap: 24px;
@@ -74,6 +90,5 @@ section ul {
 
 .IntegrantesKeane img{
     border-radius: 50%;
-    width: 15%;
-    
+    width: 50%;
 }
