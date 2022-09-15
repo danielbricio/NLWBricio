@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    /*url() chama-se de função*/
+    background-image: url(./img/background2.png);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #0c252d;
+}
+
+body *{
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+/*main *{
+    border: 1px solid red;
+}*/
+
+main    {
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+section{
+    color: white;
+    background-image: linear-gradient(90deg, red 0%, blue 100%);
+    padding-top: 4px;
+    border-radius: 11px;
+}
+
+section div{
+    background-color: #1b1b1b;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 10px;
+}
+
+
+section h2{
+    letter-spacing: -0.47px;
+}
+
+section p{
+    letter-spacing: -0.18px;
+    color: #a1a1a1;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 24px;
+}
+
+.listadedisco img{
+    width: 90px;
+    border-radius: 5px;
+}
+
+.IntegrantesKeane img{
+    border-radius: 50%;
+    width: 15%;
+    
+}
