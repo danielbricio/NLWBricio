@@ -22,18 +22,29 @@ body *{
     line-height: 160%;
 }
 
-/*main *{
+main *{
     border: 1px solid red;
-}*/
+}
 
 header{
     margin-top: 32px;
-    text-align: center;
+    height: 120px;
 }
 
 header div{
     width: 120px;
     margin:auto;
+    background-image: linear-gradient(90deg, red 0%, blue 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 3px;
+
+    transition: transform .3s;
+}
+
+header div:hover{
+    transform: scale(1.1);
+
 }
 
 header img {
@@ -49,14 +60,13 @@ main    {
 
     display: grid;
     gap: 24px;
-    margin-top: 32px;
 }
 
 section{
     color: white;
     background-image: linear-gradient(90deg, red 0%, blue 100%);
     padding-top: 4px;
-    border-radius: 11px;
+    border-radius: 10px;
 }
 
 section div{
@@ -77,18 +87,75 @@ section p{
 }
 
 section ul {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 24px;
 }
+section ul li {
+    transition: transform .3s;
+}
+section ul li:hover{
+    transform: scale(1.1);
+}
 
 .listadedisco img{
     width: 90px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .IntegrantesKeane img{
     border-radius: 50%;
     width: 50%;
+    border: 1px solid #443e54;
+}
+.RedesSociais svg{
+    width: 80% ;
+    color: aliceblue;
+}
+
+/*Animation*/
+
+header div{
+    animation: fromTop .7s;
+}
+
+@keyframes fromTop{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main section{
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0;;
+}
+main section:nth-child(2){
+    animation-delay: .4s;
+    
+}
+main section:nth-child(3){
+    animation-delay: .8s;
+    
+}
+
+@keyframes fromBottom{
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
